@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="500.0" minHeight="500.0" prefHeight="500.0" prefWidth="400.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.EditController">
+   <content>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Drug Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" prefWidth="250.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Routes">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <GridPane>
+               <children>
+                  <CheckBox fx:id="oralCheckBox" mnemonicParsing="false" text="Oral" />
+                  <CheckBox fx:id="sublingualCheckBox" mnemonicParsing="false" text="Sublingual" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="intravenusCheckBox" mnemonicParsing="false" text="Intravenus" GridPane.columnIndex="1" />
+                  <CheckBox fx:id="subcutaneousCheckBox" mnemonicParsing="false" text="Subcutaneous" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="intramuscularCheckBox" mnemonicParsing="false" text="Intramuscular" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="rectalCheckBox" mnemonicParsing="false" text="Rectal" GridPane.columnIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <Label text="Brand Names">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="brandNamesContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addBrandNameButton" mnemonicParsing="false" text="Add Brand Name">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Drug Classes">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="drugClassesContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addDrugClassButton" mnemonicParsing="false" text="Add Drug Class">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Indications">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="indicationsContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addIndicationButton" mnemonicParsing="false" text="Add Indication">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Contraindications">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="contraindicationsContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addContraindicationButton" mnemonicParsing="false" text="Add Contraindication">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Side Effects">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="sideEffectsContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addSideEffectButton" mnemonicParsing="false" text="Add Side Effect">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Considerations">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox fx:id="considerationsContainer" alignment="TOP_CENTER" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="addConsiderationButton" mnemonicParsing="false" text="Add Consideration">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <TextArea fx:id="actionTextArea" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+            <Button fx:id="okButton" mnemonicParsing="false" text="OK" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

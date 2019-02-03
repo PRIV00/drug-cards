@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+.root {
+    -fx-font-family: 'Roboto';
+    -fx-background-color: #2FD0FF;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+/* Styling for buttons */
+
+.button {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2ED1FF;
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+    -fx-background-insets: 1px;
+    -fx-padding: 10px;
+    -fx-border-width: 3px;
+    -fx-border-color: #80E3FF;
+    -fx-border-radius: 50px;
+}
+
+.button: hover {
+    -fx-background-color: #02B7E9;
+    -fx-text-fill: #AFEDFF;
+}
+
+.connected-button-left {
+    -fx-font-size: 16px;
+    -fx-border-color: #80E3FF;
+    -fx-text-fill: #02B7E9;
+    -fx-background-color: #AFEDFF;
+    -fx-border-radius: 20px 0 0 0;
+    -fx-background-radius: 20 0 0 0;
+    -fx-max-width: 151px;
+    -fx-pref-width: 151px;
+    -fx-min-width: 151px;
+    -fx-border-width: 3px 1.5px 1.5px 3px;
+}
+
+.connected-button-right {
+    -fx-font-size: 16px;
+    -fx-border-color: #80E3FF;
+    -fx-text-fill: #02B7E9;
+    -fx-background-color: #AFEDFF;
+    -fx-border-radius: 0 20px 0 0;
+    -fx-background-radius: 0 20 0 0;
+    -fx-max-width: 151px;
+    -fx-pref-width: 151px;
+    -fx-min-width: 151px;
+    -fx-border-width: 3px 3px 1.6px 1.5px;
+}
+
+/* Styling to text field and areas */
+.text-area,
+.text-area .content,
+.text-field {
+    -fx-background-color: #AFEDFF;
+    -fx-text-fill: #02B7E9;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+
+/* Styling for checkboxes and radio button */
+.check-box,
+.radio-button {
+    -fx-text-fill: #AFEDFF;
+}
+
+.check-box .box {
+    -fx-background-radius: 50%;
+    -fx-background-color: white;
+}
+
+.radio-button .radio {
+    -fx-background-color: white;
+}
+
+.check-box:hover .box {
+    -fx-background-color: #AFEDFF;
+}
+
+.check-box:selected .mark {
+    -fx-background-color:  #02B7E9;
+}
+
+/* Styling for scroll pane */
+
+
+.scroll-pane {
+       -fx-background-color: #02B7E9;
+             -fx-focus-color: transparent;
+
+}
+
+.scroll-pane:focused {
+    /* Stops that annoying glow */
+    -fx-background-insets: 0, 0, 1, 2;
+}
+
+.scroll-pane .viewport {
+       -fx-background-color: #02B7E9;
+}
+
+/* Styling for scrollbar */
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color : #AFEDFF;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+.bottom-hbox {
+    -fx-background-color: #80E3FF;
+    -fx-background-radius: 0 0 20 20;
+}
+
+/* Listview Styling */
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-width: 3px;
+    -fx-border-color: #80E3FF;
+    -fx-font-weight: bold;
+}
+
+.list-cell {
+    -fx-text-fill: #02B7EA;
+}
+
+.list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.list-cell:odd {
+    -fx-background-color: #AFEEFF;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected {
+    -fx-background-color: #02B7EA;
+    -fx-text-fill: white;
+}
+
